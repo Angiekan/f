@@ -1,0 +1,292 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* General body styling */
+body {
+  font-family: 'Roboto', 'Open Sans', sans-serif; /* Apply the imported fonts */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation bar styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #28a745; /* Green color for nav bar */
+  color: white;
+}
+
+nav img {
+  max-width: 50px;
+  height: auto;
+}
+
+nav .logo h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+nav .nav-items {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-items select, nav .nav-items a, nav button {
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+nav select {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav button {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #0056b3;
+}
+
+/* Movie Gallery */
+.movie-gallery {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  padding: 1px; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.movie-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  flex-basis: 250px; /* Set a base size for each card */
+  flex-grow: 1; /* Allow the cards to grow to fill available space */
+}
+
+.movie-card img {
+  width: 150%; 
+  height: 150px; 
+  object-fit: cover; 
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto; 
+  border-radius: 10px;
+}
+
+.movie-card h3 {
+  margin: 10px 0;
+}
+
+.movie-card p {
+  color: #777;
+}
+
+.download-button {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.download-button:hover {
+  background-color: #218838;
+}
+
+.movie-card .fa-star {
+  color: #ddd;
+}
+
+.movie-card .fa-star.checked {
+  color: gold; /* Golden color for checked stars */
+}
+
+.movie-card .fa-star:hover {
+  color: gold; /* Hover effect for gold color */
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode nav {
+  background-color: #333;
+}
+
+body.dark-mode .movie-card {
+  background-color: #222;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .movie-card .fa-star.checked {
+  color: gold;
+}
+
+body.dark-mode .movie-card .fa-star {
+  color: #777;
+}
+
+body.dark-mode .download-button {
+  background-color: #28a745;
+}
+
+body.dark-mode footer {
+  background-color: #1c1c1c;
+}
+
+body.dark-mode footer .social-links a {
+  color: #ddd;
+}
+
+/* Sign Up & Log In Container */
+.signup-container, .login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h1, .login-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Cancel Button */
+.cancelbtn {
+  background-color: #f44336;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.cancelbtn:hover {
+  background-color: #d32f2f;
+}
+
+/* Forgot Password Text */
+.psw {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.psw a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.psw a:hover {
+  text-decoration: underline;
+}
+
+/* Avatar Image - Centering it */
+.imgcontainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.imgcontainer img.avatar {
+  width: 50px; 
+  border-radius: 50%;
+}
+
+/* Dark Mode Styles for Sign Up */
+body.dark-mode .signup-container, body.dark-mode .login-container {
+  background-color: #222;
+}
+
+body.dark-mode input[type="text"], body.dark-mode input[type="password"] {
+  background-color: #444;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark-mode button {
+  background-color: #007bff;
+}
+
+body.dark-mode button:hover {
+  background-color: #0056b3;
+}

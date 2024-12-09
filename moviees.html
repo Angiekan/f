@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieFlix</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <nav>
+    <img src="./images/logo.jpg">
+    <div class="logo"><h1>MovieFlix</h1></div>
+    <div class="nav-items">
+      <select>
+        <option>Search By</option>
+        <option>Name</option>
+        <option>Year</option>
+        <option>Type</option>
+      </select>
+      <a href="#">Home</a>
+      <a href="#">Categories</a>
+      <select>
+        <option>Genres</option>
+        <option>Sci-Fi</option>
+        <option>Horror</option>
+        <option>Anime</option>
+        <option>Romance</option>
+        <option>Superhero movie</option>
+        <option>Action movie</option>
+      </select>
+      <a href="./Sign Up.html"></a><button onclick="window.location.href = 'Sign Up.html';">Sign Up</button>
+      <a href="./Log In.html"></a><button onclick="window.location.href = 'Log In.html';">Log In</button>
+      <button id="mode-toggle" onclick="toggleTheme()">Dark/Light Mode</button>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Welcome to MovieFlix</h1>
+    <div class="movie-gallery">
+      <div class="movie-card">
+        <img src="./images/sci-fi.jpg" alt="Sci-Fi Movies" >
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h3>Scold match</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="movie-card">
+        <img src="./images/21.jpg" alt="Horror Movies">
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h3>Spiderman</h3>
+        <p>No way Home</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="movie-card">
+        <img src="./images/sci-fi.jpg" alt="Sci-Fi Movies">
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h3>Sci-Fi Movies</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="movie-card">
+        <img src="./images/22.jpg" alt="Action Movie">
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h3>SPIDERMAN</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="movie-card">
+        <img src="./images/horror.jpg" alt="Horror Movie">
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h3>Shaddows</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="movie-card">
+        <img src="./images/23.jpg" alt="Sci-Fi Movies">
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h3>THE BOYS</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="movie-card">
+        <img src="./images/COMME.avif" alt="Comedy Movie">
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h3>Shortgun wedding</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="movie-card">
+        <img src="./images/the terminator.avif" alt="Sci-Fi Movies">
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h3>The Terminator</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="movie-card">
+        <img src="./images/24.jpg" alt="Sci-Fi Movies">
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h3>Saw Man</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="movie-card">
+        <img src="./images/25.jpg" alt="Sci-Fi Movies">
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h3>Love and thunder</h3>
+        <h4>THOR</h4>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="movie-card">
+        <img src="./images/27.jpg" alt="Sci-Fi Movies">
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h3>Topgun</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="movie-card">
+        <img src="./images/28.jpg" alt="Sci-Fi Movies">
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h3>Sci-Fi Movies</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="movie-card">
+        <img src="./images/29.webp" alt="Sci-Fi Movies">
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h4>Pirates Of The Carribean</h4>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="movie-card">
+        <img src="./images/30.jpg" alt="Sci-Fi Movies">
+        <a href="example-movie.mp4" download class="download-button">
+          <i class="fas fa-download"></i> Download</a>
+        <h3>Action movie</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2024 MovieFlix. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">Facebook</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
